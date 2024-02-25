@@ -1,0 +1,30 @@
+{
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "typescriptreact",
+    "typescript",
+  ],
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.configFile": ".stylelintrc.json",
+  "stylelint.packageManager": "npm",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "editor.tabSize": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "cSpell.words": [
+    "stylelint",
+    "zustand"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+}

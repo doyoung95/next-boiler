@@ -3,22 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "env-cmd -f .envs/.env.test dotenv -e .envs/.env.test -- cross-var next dev -p %PORT%",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.26.0",
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.2.1",
+    "env-cmd": "^10.1.0",
+    "immer": "^10.0.3",
+    "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "styled-components": "^5.3.11",
+    "styled-normalize": "^8.0.7",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/styled-components": "^5.1.23",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8.4.27",
+    "postcss-styled-syntax": "^0.4.0",
+    "postcss-syntax": "^0.36.2",
+    "prettier": "2.1.2",
+    "stylelint": "^15.10.2",
+    "stylelint-config-clean-order": "^5.0.1",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^6.0.3",
+    "typescript": "^5"
   }
 }

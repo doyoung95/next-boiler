@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-clean-order"
+  ],
+  "overrides": [
+    {
+      "files": [ "**/*.tsx", "**/*.ts" ],
+      "customSyntax": "@stylelint/postcss-css-in-js",
+      "rules": {
+        "no-empty-source": null,
+        "function-no-unknown":[null,{"ignoreFunctions":["/]]${/"]}],
+        "function-name-case": null,
+        "media-query-no-invalid":null,
+        "media-feature-range-notation":null,
+        "at-rule-no-vendor-prefix": null,
+        "property-no-vendor-prefix": null,
+        "font-family-name-quotes": null,
+        "declaration-block-no-redundant-longhand-properties": null,
+        "value-keyword-case": null
+
+      }
+    }
+
+  ]
+}
